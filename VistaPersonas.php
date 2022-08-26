@@ -11,7 +11,7 @@
         <h2>INGRESO DE PERSONAS</h2>
     </p>
     
-    <form action="">
+    <form action="PersonaController.php" method="post">
         
         <label for="apellidos">Apellidos</label>
         <input type="text" name="apellidos">
