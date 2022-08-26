@@ -18,8 +18,11 @@
 
             public function ListarPersona()
             {
-                echo "DATOS RECIBIDOS DE PERSONA <br>";
-                echo "<hr>"
+                echo "<h2>DATOS RECIBIDOS DE PERSONA</h2> <br>";
+                echo "<hr>";
+                echo $this->nombre."  ".$this->apellidos."<br>";
+                echo $this->telefono."  ".$this->municipio."  ".$this->sexo;
+
             }
         }
 
