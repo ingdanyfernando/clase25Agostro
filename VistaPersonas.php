@@ -32,7 +32,7 @@
         </p>
 
         <p>
-            <label for="sexto">Selecciones el Sexo</label>
+            <label for="sexo">Selecciones el Sexo</label>
             <input type="radio" value="Masculino" name="sexo">
             <input type="radio" value="Femenino" name="sexo">
         </p>
