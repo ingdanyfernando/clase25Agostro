@@ -9,7 +9,7 @@
 <body>
     <?php
         include_once "PersonaModel.php";
-        $persona = new Persona($_POST['apellidos'],$_POST['nombre'],$_POST['telefono'],$_POST['municipio'],$_POST['sexot']);
+        $persona = new Persona($_POST['apellidos'],$_POST['nombre'],$_POST['telefono'],$_POST['municipio'],$_POST['sexo']);
         $persona->ListarPersona();        
 
     ?>

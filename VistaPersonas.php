@@ -34,7 +34,13 @@
         <p>
             <label for="sexo">Selecciones el Sexo</label>
             <input type="radio" value="Masculino" name="sexo">
+            <label for="Masculino">Masculino</label>
             <input type="radio" value="Femenino" name="sexo">
+            <label for="Femenimo">Femenino</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar Datos">
         </p>
     </form>
 </body>
