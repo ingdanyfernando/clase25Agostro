@@ -17,5 +17,6 @@ class Estudiante
     public function GuardarEstudiante($ape,$nom,$dir,$tel)
     {
        /*CONEXION A LA BASE DE DATOS*/ 
+       
     }
 }
