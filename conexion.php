@@ -4,7 +4,7 @@
     {
         function Conectar()
         {
-          $mysqli = new mysqli("localhost","root","","ControlEstudiantesx");
+          $mysqli = new mysqli("localhost","root","","ControlEstudiantes");
           
           if($mysqli->connect_errno)
           {
