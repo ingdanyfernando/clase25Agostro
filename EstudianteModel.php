@@ -30,4 +30,17 @@ class Estudiante
        }
        echo "Registro agregado exitosamente";
     }
+
+    public function ListarEstudiantes()
+    {
+      $OtraConexion = new conexion();
+      $nuevoComando = $OtraConexion->Conectar();
+      $resultado = $nuevoComando->query("Select * from estudiantes");
+      if(!$resultado)
+      {
+        return $resultado;
+      } 
+      echo "Error Al intentar realizar Consulta de Estudiantes...".mysqli_error($nuevoComando);
+    }
+
 }
