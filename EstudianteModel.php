@@ -28,9 +28,9 @@ class Estudiante
        {
         echo "Ocurriò un error al insertar el registro....".mysqli_error($ComandoConexion);
        }
-       echo "Registro agregado exitosamente";
+       /*echo "Registro agregado exitosamente";*/
+       header("Location: VistaEstudiante.php");
     }
-
     public function ListarEstudiantes()
     {
       $OtraConexion = new conexion();
