@@ -9,13 +9,13 @@ class Estudiante
     private $direccion;
     private $telefono;
 
-    public function __construct($ape,$nom,$dir,$tel)
+    /*public function __construct($ape,$nom,$dir,$tel)
     {
         $this->apellidos = $ape;
         $this->nombre = $nom;
         $this->direccion = $dir;
         $this->telefono = $tel;
-    }
+    }*/
 
     public function GuardarEstudiante($ape,$nom,$dir,$tel)
     {
@@ -38,9 +38,10 @@ class Estudiante
       $resultado = $nuevoComando->query("Select * from estudiantes");
       if(!$resultado)
       {
-        return $resultado;
+        echo "Error Al intentar realizar Consulta de Estudiantes...".mysqli_error($nuevoComando);
       } 
-      echo "Error Al intentar realizar Consulta de Estudiantes...".mysqli_error($nuevoComando);
+      return $resultado;
+      
     }
 
 }

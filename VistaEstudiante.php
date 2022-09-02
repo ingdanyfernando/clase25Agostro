@@ -38,5 +38,29 @@
     <hr>
     <h3>LISTADO DE ESTUDIANTES</h3>
     <hr>
+    <table>
+        <th>NOMBRE</th>
+        <th>APELLIDOS</th>
+        <th>DIRECCION</th>
+        <th>TELEFONO</th>
+        <th colspan="2">OPERACIONES</th>
+    <?php
+        include_once "EstudiantesModel.php";
+        $Estudiante = new Estudiante();
+        $ListaEstudiantes = $Estudiante->ListarEstudiantes();
+        while($Estudiantes = mysqli_fetch_assoc($ListaEstudiantes))
+        {?>
+          <tr>
+                <td>  <?php echo $Estudiantes['nombre'] ?> </td>
+                <td>  <?php echo $Estudiantes['apellidos'] ?> </td>
+                <td>  <?php echo $Estudiantes['direccion'] ?> </td>
+                <td>  <?php echo $Estudiantes['telefono'] ?> </td>
+                <td>Editar</td>
+                <td>Eliminar</td>
+          </tr>
+          
+       <?php } ?>
+    
+    </table>
 </body>
 </html>
