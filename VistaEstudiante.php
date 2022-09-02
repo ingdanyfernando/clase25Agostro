@@ -38,7 +38,7 @@
     <hr>
     <h3>LISTADO DE ESTUDIANTES</h3>
     <hr>
-    <table>
+    <table border="1">
         <th>NOMBRE</th>
         <th>APELLIDOS</th>
         <th>DIRECCION</th>
