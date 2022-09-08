@@ -55,7 +55,7 @@
                 <td>  <?php echo $Estudiantes['apellidos'] ?> </td>
                 <td>  <?php echo $Estudiantes['direccion'] ?> </td>
                 <td>  <?php echo $Estudiantes['telefono'] ?> </td>
-                <td>Editar prueba05Oct2022</td>
+                <td><a href="#">Aqui el enlace</a></td>
                 <td>Eliminar</td>
           </tr>
           
