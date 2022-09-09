@@ -44,4 +44,12 @@ class Estudiante
       
     }
 
+    public function FiltrarEstudiante($id)
+    {
+      $nuevaConexion = new conexion();
+      $nuevoComando = $nuevaConexion->Conectar();
+      $resultado = $nuevoComando->query("Select * from estudiantes where idEstudiante=$id");
+      return $resultado;
+    }
+
 }
