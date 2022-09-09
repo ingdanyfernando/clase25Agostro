@@ -7,7 +7,7 @@
     <title>VistaEditarEstudiante</title>
 </head>
 <body>
-    <form action="">
+    <form action="EstudianteController.php" method="POST">
                         <?php
                             include_once "EstudianteModel.php";
                             $nuevoEstudiante = new Estudiante();
