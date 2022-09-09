@@ -32,7 +32,7 @@
         </p>
         
         <p>
-            <input type="submit" value="Guardar Registro">
+            <input type="submit" value="Guardar Registro" name="btnGuardar">
         </p>
     </form>
     <hr>

@@ -14,7 +14,7 @@
                             /*FILTRAR AL ESTUDIANTE SEGUN ID ENVIADO*/
                             $resultado = $nuevoEstudiante->FiltrarEstudiante($_GET['idEst']);
 
-                            while($resultadoFiltrado = mysqli_fetch_assoc([$resultado])
+                            while($resultadoFiltrado = mysqli_fetch_assoc($resultado))
                             {
                         ?>
                                 <p>
@@ -41,12 +41,15 @@
                                 value="<?php echo $resultadoFiltrado['telefono']?>">
                                 </p>
 
-                                
+                                 <p>
+                                    <input type="hidden" name="idStudent" 
+                                    value="<?php echo $resultadoFiltrado['idEstudiante']?>">
+                                 </p>   
                             <?php
                             }
                             ?>
                         
-
+                <input type="submit" value="Editar Estudiante" name="btnEditar">            
     </form>
 </body>
 </html>

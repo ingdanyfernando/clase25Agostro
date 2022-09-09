@@ -1,4 +1,17 @@
 <?php
 include "EstudianteModel.php";
 $nuevoEstudiante = new Estudiante();
-$nuevoEstudiante->GuardarEstudiante($_POST['apellidos'],$_POST['nombre'],$_POST['direccion'],$_POST['telefono']);
+
+/*GUARDAR*/
+if(isset($_POST['btnGuardar']))
+{
+    $nuevoEstudiante->GuardarEstudiante($_POST['apellidos'],$_POST['nombre'],$_POST['direccion'],$_POST['telefono']);
+}
+else
+if(isset($_POST['btnEditar']))
+{
+    
+}
+
+
+/*EDITAR*/
